@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        
+        header{
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            padding-top: 0px;
+        }
+
+        article > h2{
+            text-align: center;
+        }
+        article > p{
+            text-align: justify;
+        }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+            text-align: right;
+        }
+
+        footer{
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a><a href="#">Link</a><a href="#">Link</a><a href="#">Link</a><a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Games, Tecnologia e Saúde</h2>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Japão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus ab aperiam voluptate similique! Odit aperiam consequatur iste doloribus quam dolorum, vitae, suscipit, nulla a eos voluptatum voluptatem atque labore.</p>
+                <aside>
+                    <p>Artigo escrito por Hugo Fernando</p>
+                </aside>
+        </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Túlio Estrela</p>
+    </footer>
+</body>
+</html>
