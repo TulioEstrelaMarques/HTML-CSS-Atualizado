@@ -1,62 +1,95 @@
 @charset "UTF-8";
+
 @font-face {
-    font-family: idroid;
+    font-family: Android;
     src: url(fontes/idroid.otf) format(opentype);
     font-weight: normal;
     font-style: normal;
 }
 
-body{
-    background-color: rgb(170, 224, 88);
-    height: 100%;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #96FF61;
+    --cor1: #7BD14F;
+    --cor2: #57FF03;
+    --cor3: #45941D;
+    --cor4: #274219;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: Android, sans-serif;
 }
 
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(180deg, rgb(0, 250, 0), rgb(4, 108, 4));
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte0);
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor4));
     color: white;
     display: block;
     margin: -22px;
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.254);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.424);
 }
 
-header > h1{
+header>h1 {
     text-align: center;
     padding-top: 10px;
     font-size: 2em;
+    font-family: var(--fonte1);
 }
 
-header > p{
+header>p {
     text-align: center;
 }
 
-nav > a{
+nav>a {
     text-decoration: none;
     margin-left: 30px;
     text-align: justify;
     color: white;
 }
 
-section{
+main {
     background-color: white;
-    height: 50%;
-    width: 50%;
+    min-width: 400px;
+    max-width: 800px;
     margin: 22px auto;
 }
 
-article > h2, h3{
-    font-family: idroid, sans-serif;
+article>h2,
+h3 {
+    font-family: var(--fonte2);
     padding: 10px;
 }
 
-article > h3{
+article>h3 {
     background-image: linear-gradient(90deg, rgb(15 197 15), rgb(231 242 231));
     margin-bottom: 30px;
 }
 
-article > p{
+article>p {
     margin-top: -20px;
     text-indent: 30px;
     padding: 0px;
+}
+
+aside>ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+
+footer {
+    display: block;
+    margin: auto;
+    margin-top: -20px;
+    padding: 3px;
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
 }
